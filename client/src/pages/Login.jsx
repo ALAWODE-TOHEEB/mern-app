@@ -47,7 +47,7 @@ const Login = () => {
           const {email, password} = data;
           if ( email && password ) {
             const fetchData = await fetch(
-              "http://localhost:5000/login",
+              "https://furninub-app.onrender.com/login",
               requestOptions
             );
             const dataResponse = await fetchData.json();

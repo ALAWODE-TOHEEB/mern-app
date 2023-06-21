@@ -16,7 +16,7 @@ function App() {
  
   
   const pull =  async() => {
-      const res = await fetch("http://localhost:5000/product");
+      const res = await fetch("https://furninub-app.onrender.com/product");
       const resData = await res.json();
       console.log(resData);
       dispatch(setDataProduct(resData));

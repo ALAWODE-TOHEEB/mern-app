@@ -51,7 +51,7 @@ const Signup = () => {
     if (firstName && lastName && email && password && confirmPassword) {
       if (password === confirmPassword) {
         const fetchData = await fetch(
-          "http://localhost:5000/signup",
+          "https://furninub-app.onrender.com/signup",
           requestOptions
         );
         const dataResonse = await fetchData.json();

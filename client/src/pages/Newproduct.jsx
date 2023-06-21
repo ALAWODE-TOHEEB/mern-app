@@ -36,7 +36,7 @@ const Newproduct = () => {
 
     if (name && image && category && price) {
       const fetchData = await fetch(
-        "http://localhost:5000/uploadproduct",
+        "https://furninub-app.onrender.com/uploadproduct",
         postOptions
       );
       const fetchRes = await fetchData.json();
